@@ -20,8 +20,20 @@ sub, sup {line-height: 0;}
 .youtube-container {background-color: #000; margin-top: 32px;}
 .youtube {display: block; margin: auto; width: 960px; padding-top: 20px; padding-bottom: 20px;}
 .content-video {width: 100%; margin: 0; text-align: center;}
-.content-video-container {width: 100%; max-width: 100%; margin: auto;}
-.content-video-frame {display: inline-block; width: 105%; text-align: center;}
+.content-video-container {width: 100%; max-width: 100%; margin: auto; text-align: center;}
+.content-video-frame {display: inline-block; width: 100%; text-align: center;}
+.content-video-frame-double {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  vertical-align: top; /* 可选：多个并排时顶部对齐 */
+}
+.content-video-frame-double span {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 .content-video-frame.medium {width: 30%;}
 .content-video-frame.large {width: 36%;}
 .content-video-frame.huge {width: 76%;}

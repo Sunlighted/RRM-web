@@ -1636,7 +1636,6 @@
 
   <div>
 		<h2>Real Tasks Visualization</h2>
-    <!-- <h4>We evaluate Diffusion Reward on a real robot arm picking up a bowl on the table. This is a Franka arm attached with an Allegro hand. Videos are recorded by a RealSense D435i camera.</h4> -->
     <div style="margin: auto; margin-top: auto" align="left">
       <h4>
         We evaluate Residual Reward Models on a real Franka arm to finish tasks. Videos are recorded by iPhone15pro.
@@ -1646,12 +1645,16 @@
     <div class="content-video" style="margin-bottom: 48px">
     <div class="content-video-container">
 
+      <!-- Pick and Reach -->
       <div class="content-video" style="margin-bottom: 40px">
         <div class="content-video-container">
 
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">Pick and Reach</span>
+          </div>
+
           <div class="content-video-frame">
-          <span>Pick and Reach</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+            <video playsinline autoplay loop preload muted width="100%">
               <source src="videos/pick_and_reach.mp4" type="video/mp4">
             </video>
           </div>
@@ -1659,48 +1662,57 @@
         </div>
       </div>
 
+      <!-- Push -->
       <div class="content-video" style="margin-bottom: 40px">
         <div class="content-video-container">
 
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">Push</span>
+          </div>
+
           <div class="content-video-frame">
-          <span>Push</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+            <video playsinline autoplay loop preload muted width="100%">
               <source src="videos/push.mp4" type="video/mp4">
             </video>
           </div>
 
         </div>
       </div>
-     
+
     </div>
+  </div>
+
   
   </div>
 
   <div class="hr-long"></div>
 
   <div>
-		<h2>Simulation Tasks Visualization</h2>
-    <!-- <h4>We show the learned reward curve of expert and random trajectories for each task with Diffusion Reward.</h4> -->
-    <div style="margin: auto; margin-top: auto" align="center">
-      <h4>
-        We show the learned curve of Residual Reward Models and PEBBLE for each task.
-      </h4>
-    </div>
-    <br>
-    <div style="text-align: center;">
-      <div style="font-family: Arial; font-size: 24px; font-weight: bold; color: #883900;">State-based Tasks</div>
-      <div class="figure" style="height: 64px; background-image: url(figures/label_00.png); margin-top: auto;"></div>
-    </div>
-    <div class="content-video" style="margin-bottom: 48px">
-    <div class="content-video-container">
+  <h2>Simulation Tasks Visualization</h2>
+  <!-- <h4>We show the learned reward curve of expert and random trajectories for each task with Diffusion Reward.</h4> -->
+  <div style="margin: auto; margin-top: auto" align="center">
+    <h4>
+      We show the learned curve of Residual Reward Models and PEBBLE for each simulation task.
+    </h4>
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <div style="font-family: Arial; font-size: 24px; font-weight: bold; color: #e69b65;">State-based Tasks</div>
+    <div class="figure" style="height: 80px; background-image: url(figures/label_00.png); margin-top: auto;"></div>
+  </div>
+
+  <div class="content-video" style="margin-bottom: 48px">
+    <div class="content-video-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
 
       <div class="content-video" style="margin-bottom: 40px">
-        <div class="content-video-container">
+        <div class="content-video-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
 
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Button-Press</span>
+          </div>
           <div class="content-video-frame">
-            <span>MetaWorld Button-Press</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-              <source src="videos/button-press.mp4" type="video/mp4">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/button-press.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -1709,27 +1721,86 @@
 
       <div class="content-video" style="margin-bottom: 40px">
         <div class="content-video-container">
+
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Sweep-Into</span>
+          </div>
           <div class="content-video-frame">
-            <span>MetaWorld Sweep-Into</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-              <source src="videos/sweep-into.mp4" type="video/mp4">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/sweep-into.mp4" type="video/mp4" />
             </video>
           </div>
+
         </div>
       </div>
 
-      <div style="text-align: center; margin-top: 10px; margin-bottom:20px">
-        <button id="showMoreBtn" style="width: 130px; height: 35px; border-radius: 20px; background-color: #1e1c1c; color: #fff; font-size: 17px; border: none; cursor: pointer;">
+      <div style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
+        <button
+          id="showMoreBtn"
+          style="width: 130px; height: 35px; border-radius: 20px; background-color: #1e1c1c; color: #fff; font-size: 17px; border: none; cursor: pointer;"
+        >
           More Tasks
         </button>
       </div>
 
       <div class="content-video hidden-row" style="margin-bottom: 40px">
         <div class="content-video-container">
+
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Door-Open</span>
+          </div>
           <div class="content-video-frame">
-            <span>MetaWorld Door-Open</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-              <source src="videos/door-open.mp4" type="video/mp4">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/door-open.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-video hidden-row" style="margin-bottom: 40px">
+        <div class="content-video-container">
+
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Window-Open</span>
+          </div>
+          <div class="content-video-frame">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/window-open.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-video hidden-row" style="margin-bottom: 40px">
+        <div class="content-video-container">
+
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Door-Unlock</span>
+          </div>
+          <div class="content-video-frame">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/door-unlock.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-video hidden-row" style="margin-bottom: 40px">
+        <div class="content-video-container">
+          <div class="content-video-frame-double">
+            <span>Manipulator Learning Reach</span>
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/reach-sim.mp4" type="video/mp4" />
+            </video>
+          </div>
+          
+          <div class="content-video-frame-double">
+            <span>Manipulator Learning Push</span>
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/push-sim.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -1737,29 +1808,65 @@
 
       <div class="content-video hidden-row" style="margin-bottom: 40px">
         <div class="content-video-container">
-          <div class="content-video-frame">
-            <span>MetaWorld Window-Open</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-              <source src="videos/window-open.mp4" type="video/mp4">
+          <div class="content-video-frame-double">
+            <span>Manipulator Learning Pick-and-Reach</span>
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/pick-sim.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
       </div>
 
-      <div class="content-video hidden-row" style="margin-bottom: 40px">
-        <div class="content-video-container">
-
-          <div class="content-video-frame">
-            <span>MetaWorld Door-Unlock</span>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-              <source src="videos/door-unlock.mp4" type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-     
     </div>
+  </div>
+
+  <br />
+  <div style="text-align: center;">
+    <div style="font-family: Arial; font-size: 30px; font-weight: bold; color: #ffffff;">1</div>
+  </div>
+
+  <div style="text-align: center;">
+    <div style="font-family: Arial; font-size: 24px; font-weight: bold; color: #e69b65;">Image-based Tasks</div>
+    <div class="figure" style="height: 60px; background-image: url(figures/label_01.png); margin-top: auto;"></div>
+  </div>
+
+  <div class="content-video" style="margin-bottom: 48px">
+    <div class="content-video-container">
+
+      <div class="content-video" style="margin-bottom: 40px">
+        <div class="content-video-container">
+
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Visual Button-Press</span>
+          </div>
+          <div class="content-video-frame">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/button-press-v.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-video" style="margin-bottom: 40px">
+        <div class="content-video-container">
+
+          <div style="width: 100%; text-align: center; margin-bottom: 10px;">
+            <span style="font-size: 20px; font-weight: bold;">MetaWorld Visual Sweep-Into</span>
+          </div>
+          <div class="content-video-frame">
+            <video playsinline autoplay loop preload muted width="100%">
+              <source src="videos/sweep-into-v.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
   
   </div>
   <div class="hr-long"></div>
